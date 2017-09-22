@@ -14,7 +14,12 @@ def jogar(jogador,linha,coluna):
     if coluna not in valores:
         raise RuntimeError('Coluna inválida!')
     TAB[linha][coluna] = jogador
-
+    if  (linha == 'X' and coluna == 'X') or (linha = 'O' and coluna== 'O' :
+        raise RuntimeErro('Local ocupado')
+   
+        
+                                             
+    
 def tabuleiro():
     return TAB
 
